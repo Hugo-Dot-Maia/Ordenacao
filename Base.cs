@@ -8,7 +8,7 @@ public class Base
     {
 		for (int i = 0; i < numerosAleatorios.Length; i++)
 		{
-			numerosAleatorios[i] = randNum.Next(Min, Max);
+			numerosAleatorios[i] = randNum.Next(Min, Max); //Teste
 		}
 	}
 
