@@ -1,22 +1,38 @@
 ﻿using System;
 
-public class Base
+namespace Base
 {
-	private int[] numerosAleatorios = new int[5];
+	public class Base
+	{
+		private int[] numerosAleatorios = new int[100];
 
-	public setNumeros()
-    {
-		for (int i = 0; i < numerosAleatorios.Length; i++)
+		public setNumeros()
 		{
-			numerosAleatorios[i] = randNum.Next(Min, Max); //Teste
+			for (int i = 0; i < numerosAleatorios.Length; i++)
+			{
+				numerosAleatorios[i] = randNum.Next(0, 1000);
+			}
 		}
+
+		public getNumeros(int indice)
+		{
+			return numerosAleatorios[indice];
+		}
+		public getLenght()
+        {
+			return numerosAleatorios.Length;
+        }
+
+		public swap(int i, int j)
+        {
+			int temp = numerosAleatorios[i];
+			numerosAleatorios[i] = numerosAleatorios[j];
+			numerosAleatorios[j] = temp;
+
+        }
+		
+
+
 	}
-
-	public getNumeros()
-    {
-		return numerosAleatorios;
-    }
-
-
-	
 }
+
